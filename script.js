@@ -24,7 +24,6 @@ body.addEventListener('mousedown', function (e) {
     e.preventDefault();
     elem = document.elementFromPoint(e.clientX, e.clientY);
     body.addEventListener('mousemove', listener);
-    console.log(elem);
 });
 
 
