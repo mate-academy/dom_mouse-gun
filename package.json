@@ -1,0 +1,26 @@
+{
+  "name": "dom_mouse-gun",
+  "version": "1.0.0",
+  "description": "1) Create an empty HTML page and add the following functionality to it: when you click anywhere on the page, the browser logs to the console the X and Y coordinates of where you have clicked in the window. For example, if you click in the top left corner of the page, the output will be `0 0` (or close to it). Use the `click` event.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.5"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlhaMazurenko/dom_mouse-gun.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlhaMazurenko/dom_mouse-gun/issues"
+  },
+  "homepage": "https://github.com/OlhaMazurenko/dom_mouse-gun#readme"
+}
