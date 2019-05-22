@@ -58,45 +58,49 @@ outer.onmouseup = function() {
 
 // Task 7
 document.onclick = function() {
-  console.log(event.pageX, event.pageY);
+  console.log(event.pageY, event.pageX);
 };
 
-// // Task 8
-// // Task from 2019/05/20 dom_mouse-gun
-// // Inputed on console and click on element of page
-// document.onclick = function() {
-//   // easy way:
-//   // event.target.style.display = 'none';
+/*
+// Task 8
+// Task from 2019/05/20 dom_mouse-gun
+// Inputed on console and click on element of page
+document.onclick = function() {
+  // easy way:
+  // event.target.style.display = 'none';
 
-//   // Task way:
-//   const posX = event.clientX;
-//   const posY = event.clientY;
-//   const elem = document.elementFromPoint(posX, posY);
+  // Task way:
+  const posX = event.clientX;
+  const posY = event.clientY;
+  const elem = document.elementFromPoint(posX, posY);
 
-//   elem.style.display = 'none';
-// };
+  elem.style.display = 'none';
+};
+*/
 
-// // Task 9
-// // Optional task from 2019/05/20 dom_mouse-gun
-// // Inputed on console.
-// // Take an element on the page and move it somewhere
-// document.onmousedown = function() {
-//   const elStyle = event.target.style;
-//   let left = event.clientX;
-//   let top = event.clientY;
-//   if(event.target.tagName !== 'BODY' && event.target.tagName !== 'HTML') {
-//     document.getElementsByTagName('BODY')[0].style.position = 'relative';
-//     elStyle.position = 'absolute';
-//     elStyle.left = left + 'px';
-//     elStyle.top = top + 'px';
-//     document.onmousemove = function() {
-//       left = event.clientX;
-//       top = event.clientY;
-//       elStyle.left = left + 'px';
-//       elStyle.top = top + 'px';
-//     };
-//   }
-// };
-// document.onmouseup = function() {
-//   document.onmousemove = false;
-// }
+/*
+// Task 9
+// Optional task from 2019/05/20 dom_mouse-gun
+// Inputed on console.
+// Take an element on the page and move it somewhere
+document.onmousedown = function() {
+  const elStyle = event.target.style;
+  let left = event.clientX;
+  let top = event.clientY;
+  if(event.target.tagName !== 'BODY' && event.target.tagName !== 'HTML') {
+    document.getElementsByTagName('BODY')[0].style.position = 'relative';
+    elStyle.position = 'absolute';
+    elStyle.left = left + 'px';
+    elStyle.top = top + 'px';
+    document.onmousemove = function() {
+      left = event.clientX;
+      top = event.clientY;
+      elStyle.left = left + 'px';
+      elStyle.top = top + 'px';
+    };
+  }
+};
+document.onmouseup = function() {
+  document.onmousemove = false;
+}
+*/
