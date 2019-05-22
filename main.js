@@ -2,7 +2,7 @@
 
 document.addEventListener('mousedown', (ev) => {
     const coursorElem = makeCircle(ev.clientX, ev.clientY); 
-    console.log(this);
+
     document.addEventListener('mousemove', (ev) => {
         coursorElem.style.top = `${ev.clientY}px`;
         coursorElem.style.left = `${ev.clientX}px`;
