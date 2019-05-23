@@ -9,8 +9,7 @@ document.addEventListener('click', (e) => {
 
  function moveAt(e) {
   const element = document.elementFromPoint(e.clientX, e.clientY);
-  element.style.top = `${e.clientY}px`;
-  element.style.left = `${e.clientX}px`;
+  element.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
 }
 
 document.addEventListener('mousedown', (e) => {
