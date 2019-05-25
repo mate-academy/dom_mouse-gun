@@ -9,26 +9,24 @@
 
 // Mouse Gun №9
 const body = document.querySelector('body');
-let elem ;
 
-const listener = function (event) {
+const createListener = elem => event => {
     const coordinates = {
         left : event.clientX - elem.clientWidth / 2,
         top : event.clientY - elem.clientHeight / 2
     };
     elem.style.position = 'absolute';
-    elem.style.left = coordinates.left + 'px';
-    elem.style.top = coordinates.top + 'px';
+    elem.style.left = `${coordinates.left}px`;
+    elem.style.top = `${coordinates.top}px`;
 };
-body.addEventListener('mousedown', function (e) {
-    e.preventDefault();
-    elem = document.elementFromPoint(e.clientX, e.clientY);
+body.addEventListener('mousedown', event => {
+    event.preventDefault();
+    const elem = document.elementFromPoint(event.clientX, event.clientY);
+    const listener = createListener(elem);
     body.addEventListener('mousemove', listener);
-});
-
-
-body.addEventListener('mouseup', function () {
-    body.removeEventListener('mousemove', listener);
+    body.addEventListener('mouseup', () => {
+        body.removeEventListener('mousemove', listener);
+    });
 });
 
 
