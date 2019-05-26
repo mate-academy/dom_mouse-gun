@@ -17,3 +17,6 @@
 8) Do #7, but on click, instead of printing coordinates destroy the element that happens to be at the current cursor position. Use the `elementFromPoint` method. **Upload your function to GitHub and share with your TA.**
 
 9) (optional) Combine #6 and #8 in the following way: after running your function in the console of any webpage, you should be able to drag'n'drop every element on it and move them to arbitrary locations. You can use `transform/translate` for that (it’s okay if your method fails to work occasionally due to already assigned `transform` values).
+
+## Result
+[Link to gh-pages](https://yojikyo.github.io/dom_mouse-gun/)
