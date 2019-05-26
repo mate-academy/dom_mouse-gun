@@ -1,0 +1,14 @@
+@import "utils";
+@import "fonts";
+@import "typography";
+
+body {
+  position: relative;
+  background: $c-gray;
+  
+  .circle {
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+  }
+}
