@@ -1,0 +1,19 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  position: relative;
+  background: #ccc; }
+  body .circle {
+    background: red;
+    border-radius: 50%;
+    position: absolute; }
+
+/*# sourceMappingURL=main.css.map */
