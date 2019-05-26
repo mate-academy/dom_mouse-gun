@@ -1,4 +1,5 @@
 # Mouse Gun
+https://sherjlok15.github.io/dom_mouse-gun/
 
 1) Create an empty HTML page and add the following functionality to it: when you click anywhere on the page, the browser logs to the console the X and Y coordinates of where you have clicked in the window. For example, if you click in the top left corner of the page, the output will be `0 0` (or close to it). Use the `click` event.
 
