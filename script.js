@@ -1,4 +1,4 @@
-// Task 7
+// Task 8
 /*
 document.querySelector('html').addEventListener('click', event => {
   event.preventDefault()
@@ -6,25 +6,25 @@ document.querySelector('html').addEventListener('click', event => {
 })
 */
 
-//task 8
-const html = document.querySelector('html');
+//task 9
+const body = document.querySelector('body');
 
-const draggingElement  = (event) => {
-  event.preventDefault()
-  const item = document.elementFromPoint(event.clientX, event.clientY)
-  item.style.position = "absolute"
-  item.style.zIndex = 1000
-  item.style.left = `${event.pageX - item.clientWidth / 2}px`;
-  item.style.top = `${event.pageY - item.clientHeight / 2}px`;
-}
+const dragging = elem => event => {
+  let [X, Y] = [`${event.clientX - elem.clientWidth / 2}px`, `${event.clientY - elem.clientHeight / 2}px`]
+  elem.style.position = 'absolute';
+  elem.style.left = X;
+  elem.style.top = Y;
+};
 
-html.addEventListener('mousedown', event => {
-  event.preventDefault()
-  itemPosition(event)
-  html.addEventListener('mousemove', draggingElement)
-  document.body.appendChild(element)
+body.addEventListener('mousedown', event => {
+  event.preventDefault();
+  const elem = document.elementFromPoint(event.clientX, event.clientY);
+  const listener = dragging(elem);
+  body.addEventListener('mousemove', listener);
+  body.addEventListener('mouseup', () => {
+    body.removeEventListener('mousemove', listener);
+  });
 });
 
-html.addEventListener('mouseup', event => {
-  html.removeEventListener('mousemove', draggingElement)
-});
+
+
