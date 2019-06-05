@@ -3,3 +3,11 @@ node_modules
 .DS_Store
 yarn.lock
 package-lock.json
+.editorconfig
+LICENSE
+gulpfile.js
+.stylelintrc.js
+.stylelintignore
+.eslintrc.js
+.eslintignore
+.editorconfig
