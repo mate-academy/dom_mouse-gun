@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+div {
+  border: 1px solid #000;
+  height: 100vh;
+}
+
+#down-block {
+  position: relative;
+}
+#down-block > div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: #f00;
+}
+
+/*# sourceMappingURL=index.css.map */
